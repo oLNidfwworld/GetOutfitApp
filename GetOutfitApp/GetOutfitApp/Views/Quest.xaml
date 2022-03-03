@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetOutfitApp.Views.Quest">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Frame Margin="15" Grid.Row="0" >
+                    <StackLayout   >
+
+                        <Label Style="{StaticResource WhiteLabel}" Text="На сколько лет вы себя ощущаете?"></Label>
+                        <RadioButton Style="{StaticResource WhiteLabel}" Content="От 18 до 32" />
+                        <RadioButton Style="{StaticResource WhiteLabel}" Content="От 33 до 57" />
+                        <RadioButton Style="{StaticResource WhiteLabel}" Content="58 и выше" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="15" Grid.Row="1" >
+                    <StackLayout   >
+
+                        <Label Style="{StaticResource WhiteLabel}"  Text="Какие цвета в одежде вы предпочитаете?(Выберете один или несколько ответов)"></Label>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Светлые" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Темные" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Смешанные" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Яркие" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame  Margin="15"  Grid.Row="2" >
+                    <StackLayout   >
+
+                        <Label Style="{StaticResource WhiteLabel}"  Text="Какую одежду вы носите чаще всего? "></Label>
+                        <Entry></Entry>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="15"  Grid.Row="3" >
+                    <StackLayout   >
+
+                        <Label Style="{StaticResource WhiteLabel}"  Text="Какой стиль вам больше всего подходит?"></Label>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Классический" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Спортивный" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Повседневный" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" >
+                            <CheckBox ></CheckBox>
+                            <Label Style="{StaticResource WhiteLabel}"  Text="Одеваюсь как захочу    " VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

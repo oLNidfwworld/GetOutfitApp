@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GetOutfitApp.Views.Feed">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Margin="10" Style="{StaticResource BlackLabelBBB}" >Category 1</Label>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <Label>Content 1</Label>
+                    <Label>Content 2</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                    <Label>Content 3</Label>
+                </StackLayout>
+            </ScrollView>
+            <Label Margin="10" Style="{StaticResource BlackLabelBBB}" >Category 2</Label>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <Label>Content 4</Label>
+                    <Label>Content 5</Label>
+                    <Label>Content 6</Label>
+                </StackLayout>
+            </ScrollView>
+            <Label Margin="10" Style="{StaticResource BlackLabelBBB}" >Category 3</Label>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <Label>Content 7</Label>
+                    <Label>Content 8</Label>
+                    <Label>Content 9</Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

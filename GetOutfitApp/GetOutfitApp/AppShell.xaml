@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:llc="clr-namespace:GetOutfitApp.Views"
+             x:Class="GetOutfitApp.AppShell">
+
+
+
+
+
+    <TabBar>
+
+        <!-- 
+        
+        <ShellContent Title="Welcome"  Route="AboutPage" ContentTemplate="{DataTemplate local:Welcome}" />
+        <ShellContent Title="Interests" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Interests}" />
+        
+        -->
+        <ShellContent Title="Outfit" ContentTemplate="{DataTemplate llc:Outfit}" />
+        <ShellContent Title="Feed" ContentTemplate="{DataTemplate llc:Feed}" />
+        <ShellContent Title="Wish List" ContentTemplate="{DataTemplate llc:WishList}" >
+        </ShellContent>
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate llc:Profile}" />
+    </TabBar>
+
+    <!--  <ShellContent Route="Interests" ContentTemplate="{DataTemplate llc:Interests}" />  -->
+</Shell>
