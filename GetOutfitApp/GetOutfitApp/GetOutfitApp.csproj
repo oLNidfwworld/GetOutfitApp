@@ -11,10 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\chanel.jpg" />
     <None Remove="Resources\Fonts\AmcapEternal.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\chanel.jpg" />
     <EmbeddedResource Include="Resources\Fonts\AmcapEternal.ttf" />
   </ItemGroup>
 

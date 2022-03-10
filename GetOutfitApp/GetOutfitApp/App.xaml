@@ -1,38 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GetOutfitApp.App">
+             x:Class="GetOutfitApp.App"
+             >
     <Application.Resources>
-        <Style x:Key="Style1" TargetType="Label">
-            <Setter Property="FontFamily" Value="AmcapEternal.ttf"></Setter>
-            <Setter Property="FontSize" Value="30"></Setter>
-            <Setter Property="TextColor" Value="White"></Setter>
-        </Style>
-        <Style x:Key="BlackLabel" TargetType="Label">
-            <Setter Property="FontSize" Value="20"></Setter>
-            <Setter Property="TextColor" Value="Black"></Setter>
-        </Style>
-        <Style x:Key="BlackLabelBBB" TargetType="Label" BasedOn="{StaticResource BlackLabel}">
-            <Setter Property="FontSize" Value="25"></Setter>
-            <Setter Property="FontAttributes" Value="Bold"></Setter>
-        </Style>
-        <Style x:Key="WhiteLabel"  TargetType="Label" BasedOn="{StaticResource BlackLabel}">
-            <Setter Property="TextColor" Value="White"></Setter>
-        </Style>
-        
-        <Style x:Key="GrayButton" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Black"></Setter>
-            <Setter Property="CornerRadius" Value="10"></Setter>
-            <Setter Property="Background" Value="Gray"></Setter>
-        </Style>
-        <Style x:Key="WhiteButton" TargetType="Button" BasedOn="{StaticResource GrayButton}">
-            <Setter Property="BackgroundColor" Value="Gray"></Setter>
-            <Setter Property="Background" Value="White"></Setter>
-        </Style>
-        
-        <Style TargetType="Frame" >
-            <Setter Property="CornerRadius" Value="15"></Setter>
-            <Setter Property="Background" Value="Gray"></Setter>
-        </Style>
+        <ResourceDictionary >
+
+
+            <Style x:Key="Style1" TargetType="Label">
+                <Setter Property="FontFamily" Value="AmcapEternal.ttf"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+            <Style x:Key="BlackLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+
+            <Style x:Key="HeaderLabel" TargetType="Label" BasedOn="{StaticResource BlackLabel}">
+                <Setter Property="Margin" Value="10"></Setter>
+                <Setter Property="FontSize" Value="25"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+            <Style x:Key="WhiteLabel"  TargetType="Label" BasedOn="{StaticResource BlackLabel}">
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+
+            <Style x:Key="GrayButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black"></Setter>
+                <Setter Property="CornerRadius" Value="10"></Setter>
+                <Setter Property="Background" Value="Gray"></Setter>
+            </Style>
+            <Style x:Key="WhiteButton" TargetType="Button" BasedOn="{StaticResource GrayButton}">
+                <Setter Property="BackgroundColor" Value="Gray"></Setter>
+                <Setter Property="Background" Value="White"></Setter>
+            </Style>
+
+            <Style TargetType="Frame" >
+                <Setter Property="CornerRadius" Value="15"></Setter>
+                <Setter Property="Background" Value="Gray"></Setter>
+            </Style>
+
+            <Style TargetType="Image">
+                <Style.Triggers>
+                    <Trigger Property=""></Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

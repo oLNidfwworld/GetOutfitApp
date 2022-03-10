@@ -1,40 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GetOutfitApp.Views.Profile">
+             x:Class="GetOutfitApp.Views.Profile"
+             
+            Title="GetOutfit">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="10">
-                <Label Style="{StaticResource BlackLabelBBB}">Gender</Label>
+                <Label Style="{StaticResource HeaderLabel}">Gender</Label>
                 <RadioButton Content="Male"></RadioButton>
                 <RadioButton Content="Female"></RadioButton>
                 <RadioButton Content="Non-binary"></RadioButton>
             </StackLayout>
             <StackLayout Margin="10">
 
-                <Label Style="{StaticResource BlackLabelBBB}">Brands</Label>
-                <ScrollView Margin="10">
-                    <Grid >
+                <Label Style="{StaticResource HeaderLabel}">Brands</Label>
+                <ScrollView  WidthRequest="400" Margin="10">
+                    <Grid  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="800" >
                         <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
-                            <RowDefinition></RowDefinition>
+                            <RowDefinition ></RowDefinition>
+                            <RowDefinition  ></RowDefinition>
+                            <RowDefinition  ></RowDefinition>
+                            <RowDefinition  ></RowDefinition>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
-                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition ></ColumnDefinition>
+                            <ColumnDefinition ></ColumnDefinition>
+                            <ColumnDefinition ></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-
-                        <Image Grid.Row="0" Grid.Column="0" Source="chanel.jpg"></Image>
-                        <Label Grid.Row="0" Grid.Column="1"  Text="Brand2"></Label>
-                        <Label Grid.Row="0" Grid.Column="2"  Text="Brand3"></Label>
-                        <Label Grid.Row="1" Grid.Column="0"  Text="Brand4"></Label>
-                        <Label Grid.Row="1" Grid.Column="1"  Text="Brand5"></Label>
-                        <Label Grid.Row="1" Grid.Column="2"  Text="Brand6"></Label>
-                        <Label Grid.Row="2" Grid.Column="0"  Text="Brand7"></Label>
-                        <Label Grid.Row="2" Grid.Column="1"  Text="Brand8"></Label>
-                        <Label Grid.Row="2" Grid.Column="2"  Text="Brand9"></Label>
+                        <Image x:Name="brand1"  Grid.Row="0" Grid.Column="0"  ></Image>
+                        <Image x:Name="brand2" Grid.Row="0" Grid.Column="1"  ></Image>
+                        <Image x:Name="brand3" Grid.Row="0" Grid.Column="2"  />
+                        <Image x:Name="brand4" Grid.Row="1" Grid.Column="0" ></Image>
+                        <Image x:Name="brand5" Grid.Row="1" Grid.Column="1"   ></Image>
+                        <Image x:Name="brand6" Grid.Row="1" Grid.Column="2"  ></Image>
+                        <Image x:Name="brand7" Grid.Row="2" Grid.Column="0"  ></Image>
+                        <Image x:Name="brand8" Grid.Row="2" Grid.Column="1"  ></Image>
+                        <Image x:Name="brand9" Grid.Row="2" Grid.Column="2" ></Image>
+                        
+                        <Image x:Name="brand10" Grid.Row="3" Grid.Column="0" ></Image>
+                        <Image x:Name="brand11" Grid.Row="3" Grid.Column="1" ></Image>
+                        <Image x:Name="brand12" Grid.Row="3" Grid.Column="2" ></Image>
                     </Grid>
                 </ScrollView>
             </StackLayout>
