@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using GetOutfitApp;
 using GetOutfitApp.Views;
-
+using Xamarin.Essentials;
 
 namespace GetOutfitApp
 {
@@ -12,9 +12,12 @@ namespace GetOutfitApp
         public App()
         {
             InitializeComponent();
+            if (Preferences.ContainsKey("Login"))
+                MainPage = new AppShellWLogin();
+            else
 
-            MainPage = new AppShell();
-        }
+                MainPage = new AppShell();
+        }   
 
         protected override void OnStart()
         {

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace GetOutfitApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Welcome : ContentPage
+    public partial class RegistrationPage : ContentPage
     {
-        public Welcome()
+        public RegistrationPage()
         {
             InitializeComponent();
         }

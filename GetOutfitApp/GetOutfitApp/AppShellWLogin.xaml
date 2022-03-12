@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:llc="clr-namespace:GetOutfitApp.Views"
-             x:Class="GetOutfitApp.AppShell"
+             x:Class="GetOutfitApp.AppShellWLogin"
        
+       xmlns:llc="clr-namespace:GetOutfitApp.Views"
+   
        Title="GetOutfit">
 
 
@@ -27,11 +28,6 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-
-    <ShellItem x:Name="LoginStart">
-        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}"  />
-    </ShellItem>
-
     <TabBar>
 
         <!-- 
@@ -46,6 +42,12 @@
         </ShellContent>
         <ShellContent Title="Profile" ContentTemplate="{DataTemplate llc:Profile}" Route="Profile"/>
     </TabBar>
+
+
+
+    <ShellItem x:Name="LoginStart">
+        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}"  />
+    </ShellItem>
 
     <!--  <ShellContent Route="Interests" ContentTemplate="{DataTemplate llc:Interests}" />  -->
 </Shell>

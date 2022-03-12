@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetOutfitApp.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,16 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using GetOutfitApp.Views;
+
 namespace GetOutfitApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AppShell : Shell
+    public partial class AppShellWLogin : Shell
     {
-        public AppShell()
+        public AppShellWLogin()
         {
             InitializeComponent();
+
 
 
 
