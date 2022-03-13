@@ -9,7 +9,7 @@
              Shell.FlyoutBehavior="Disabled"
              Visual="Material"
              >
-    
+
     <ContentPage.BindingContext>
         <vm:LoginPageViewmodel/>
     </ContentPage.BindingContext>

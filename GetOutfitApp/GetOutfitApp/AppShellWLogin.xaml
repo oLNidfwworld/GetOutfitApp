@@ -4,7 +4,7 @@
              x:Class="GetOutfitApp.AppShellWLogin"
        
        xmlns:llc="clr-namespace:GetOutfitApp.Views"
-   
+  
        Title="GetOutfit">
 
 
@@ -45,8 +45,8 @@
 
 
 
-    <ShellItem x:Name="LoginStart">
-        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}"  />
+    <ShellItem x:Name="LoginStart" >
+        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}" Route="LoginPage" />
     </ShellItem>
 
     <!--  <ShellContent Route="Interests" ContentTemplate="{DataTemplate llc:Interests}" />  -->

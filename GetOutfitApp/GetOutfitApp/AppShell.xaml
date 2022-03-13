@@ -29,7 +29,7 @@
 
 
     <ShellItem x:Name="LoginStart">
-        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}"  />
+        <ShellContent  ContentTemplate="{DataTemplate llc:LoginPage}" Route="LoginPage" />
     </ShellItem>
 
     <TabBar>

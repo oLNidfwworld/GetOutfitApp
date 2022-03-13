@@ -11,20 +11,6 @@ namespace GetOutfitApp.Helpers
 {
     internal class GetUserData
     {
-        public FirebaseObject<UserModel> userData{get;set;}
-        FirebaseClient client;
-
-        public GetUserData(string login)
-        {
-            client = new FirebaseClient("https://getoutfitbase-default-rtdb.firebaseio.com/");
-            this.GetUserDataAsync(login).Wait();
-        }
-
-        public async Task GetUserDataAsync(string login)
-        {
-            userData = (await client.Child("Users").OnceAsync<UserModel>()).Where(u => u.Object.Login == login).FirstOrDefault();
-
-
-        }
+        
     }
 }

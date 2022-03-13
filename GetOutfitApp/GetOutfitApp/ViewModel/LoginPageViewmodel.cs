@@ -93,9 +93,12 @@ namespace GetOutfitApp.ViewModel
 
         #endregion
 
+        #region
         public Command LoginCommand { get; private set; }
         public Command GoToRegistrationCommand { get;private set; }
+        #endregion
 
+        #region
         private async Task LoginCommandAsync()
         {
             if (Isbusy)
@@ -107,12 +110,9 @@ namespace GetOutfitApp.ViewModel
                 if (Result)
                 {
                     Preferences.Set("Login", Login);
-
-                    var data = new GetUserData(Login);
-                    string name = data.userData.Object.Fullname;
-
-                    Preferences.Set("Fullname", name);
-
+                    var user = await usersrvs.GetUser(Login);
+                    Preferences.Set("FullName", user.Object.Fullname);
+                    
                     await Shell.Current.GoToAsync($"//{nameof(Feed)}");
                 }
                 else
@@ -148,6 +148,7 @@ namespace GetOutfitApp.ViewModel
                 Isbusy = false;
             }
         }
+        #endregion
 
     }
 }

@@ -2,19 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GetOutfitApp.Views.Profile"
-             
+             xmlns:vm ="clr-namespace:GetOutfitApp.ViewModel"
             Title="GetOutfit">
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel></vm:ProfileViewModel>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="10">
-                <Label Style="{StaticResource HeaderLabel}">Gender</Label>
-                <RadioButton Content="Male"></RadioButton>
-                <RadioButton Content="Female"></RadioButton>
-                <RadioButton Content="Non-binary"></RadioButton>
+                <Label Style="{StaticResource HeaderLabel}">Общее</Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Имя: " Style="{StaticResource BlackLabel}"/>
+                            <Span Text="{Binding Fullname}" Style="{StaticResource BlackLabel}"  />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Логин: " Style="{StaticResource BlackLabel}"/>
+                            <Span Text="{Binding Login}" Style="{StaticResource BlackLabel}"  />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+            <StackLayout Margin="10">
+                <Label Style="{StaticResource HeaderLabel}">Пол</Label>
+                <RadioButton Content="Мужской"></RadioButton>
+                <RadioButton Content="Женский"></RadioButton>
+                <RadioButton Content="Небинарный"></RadioButton>
             </StackLayout>
             <StackLayout Margin="10">
 
-                <Label Style="{StaticResource HeaderLabel}">Brands</Label>
+                <Label Style="{StaticResource HeaderLabel}">Любимые бренды</Label>
                 <ScrollView  WidthRequest="400" Margin="10">
                     <Grid  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="800" >
                         <Grid.RowDefinitions>

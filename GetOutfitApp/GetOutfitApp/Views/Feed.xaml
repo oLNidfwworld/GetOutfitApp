@@ -2,9 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GetOutfitApp.Views.Feed"
+             xmlns:vm ="clr-namespace:GetOutfitApp.ViewModel" 
              
+             
+             
+             Shell.TabBarIsVisible="True"
+             Shell.NavBarIsVisible="True"
+             Shell.FlyoutBehavior="Disabled"
+             Visual="Material"
             Title="GetOutfit">
-            
+
+    <ContentPage.BindingContext>
+        <vm:FeedViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Text="Logout" Command="{Binding LogoutСommand}" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="10">
             <Label Style="{StaticResource HeaderLabel}" >Category 1</Label>

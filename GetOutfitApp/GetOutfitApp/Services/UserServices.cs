@@ -40,6 +40,20 @@ namespace GetOutfitApp.Services
                 return false;
             }
         }
+
+        public async Task<FirebaseObject<UserModel>> GetUser(string login)
+        {
+            if(await IsUserExists(login) != false)
+            {
+                var model = (await client.Child("Users").OnceAsync<UserModel>()).Where(u => u.Object.Login == login).FirstOrDefault();
+                return model;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public async Task<bool> LoginUser(string login, string password)
         {
             var user = (await client.Child("Users").OnceAsync<UserModel>()).Where(u => u.Object.Login == login)

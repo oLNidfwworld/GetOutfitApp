@@ -9,6 +9,12 @@ namespace GetOutfitApp.ViewModel
 {
     internal class RegistrationPageViewmodel:BaseViewModel
     {
+
+        public RegistrationPageViewmodel()
+        {
+            RegCommand = new Command(async () => await RegCommandAsync());
+        }
+
         #region
         private string _Login;
         public string Login
@@ -95,12 +101,12 @@ namespace GetOutfitApp.ViewModel
 
         #endregion
 
+        #region
         public Command RegCommand { get; private set; }
-        public RegistrationPageViewmodel()
-        {
-            RegCommand = new Command(async () => await RegCommandAsync());
-        }
+        #endregion
 
+
+        #region
         private async Task RegCommandAsync()
         {
             if (Isbusy)
@@ -129,5 +135,7 @@ namespace GetOutfitApp.ViewModel
                 Isbusy = false;
             }
         }
+        #endregion
+
     }
 }
