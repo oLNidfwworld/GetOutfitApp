@@ -37,38 +37,7 @@
                 <RadioButton Content="Женский"></RadioButton>
                 <RadioButton Content="Небинарный"></RadioButton>
             </StackLayout>
-            <StackLayout Margin="10">
-
-                <Label Style="{StaticResource HeaderLabel}">Любимые бренды</Label>
-                <ScrollView  WidthRequest="400" Margin="10">
-                    <Grid  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="800" >
-                        <Grid.RowDefinitions>
-                            <RowDefinition ></RowDefinition>
-                            <RowDefinition  ></RowDefinition>
-                            <RowDefinition  ></RowDefinition>
-                            <RowDefinition  ></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition ></ColumnDefinition>
-                            <ColumnDefinition ></ColumnDefinition>
-                            <ColumnDefinition ></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Image x:Name="brand1"  Grid.Row="0" Grid.Column="0"  ></Image>
-                        <Image x:Name="brand2" Grid.Row="0" Grid.Column="1"  ></Image>
-                        <Image x:Name="brand3" Grid.Row="0" Grid.Column="2"  />
-                        <Image x:Name="brand4" Grid.Row="1" Grid.Column="0" ></Image>
-                        <Image x:Name="brand5" Grid.Row="1" Grid.Column="1"   ></Image>
-                        <Image x:Name="brand6" Grid.Row="1" Grid.Column="2"  ></Image>
-                        <Image x:Name="brand7" Grid.Row="2" Grid.Column="0"  ></Image>
-                        <Image x:Name="brand8" Grid.Row="2" Grid.Column="1"  ></Image>
-                        <Image x:Name="brand9" Grid.Row="2" Grid.Column="2" ></Image>
-                        
-                        <Image x:Name="brand10" Grid.Row="3" Grid.Column="0" ></Image>
-                        <Image x:Name="brand11" Grid.Row="3" Grid.Column="1" ></Image>
-                        <Image x:Name="brand12" Grid.Row="3" Grid.Column="2" ></Image>
-                    </Grid>
-                </ScrollView>
-            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

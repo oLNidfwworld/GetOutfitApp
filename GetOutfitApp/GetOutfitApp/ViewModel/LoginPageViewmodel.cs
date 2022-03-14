@@ -31,7 +31,7 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Login = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged(nameof(_Login));
             }
         }
 
@@ -40,11 +40,11 @@ namespace GetOutfitApp.ViewModel
         {
             get
             {
-                return this._Login;
+                return this._Fullname;
             }
             set
             {
-                this._Login = value;
+                this._Fullname = value;
                 OnPropertyChanged();
             }
         }
@@ -59,7 +59,7 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Password = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged(nameof(_Password));
             }
         }
 
@@ -73,7 +73,7 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Isbusy = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged(nameof(_Isbusy));
             }
         }
 

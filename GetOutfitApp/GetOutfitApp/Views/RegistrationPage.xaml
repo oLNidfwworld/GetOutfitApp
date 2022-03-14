@@ -16,11 +16,11 @@
                 <Entry Placeholder="Пароль" HorizontalTextAlignment="Center" Text="{Binding Password}"/>
                 <Entry Placeholder="Повторите пароль" IsPassword="True" HorizontalTextAlignment="Center" />
                 <Label Text="Null"/>
-                <ProgressBar HeightRequest="5" BackgroundColor="Gray" ProgressColor="Green" Progress="0.1" />
-                <Entry Placeholder="E-mail" HorizontalTextAlignment="Center" FontSize="15" TextColor="White" PlaceholderColor="FloralWhite" Text="{Binding Email}"/>
+                
+                <Entry Placeholder="E-mail" HorizontalTextAlignment="Center" FontSize="15" Text="{Binding Email}"/>
                 <Label Style ="{StaticResource BlackLabel}" Text="Дата рождения"  Margin="0,0,0, 4" />
                 <DatePicker MinimumDate="01/01/1970" MaximumDate="11/03/2022" FontSize="15" TextColor="Black"/>
-                <Button CornerRadius="50" Text="Завершить регистрацию" BackgroundColor="Black" Command="{Binding RegCommand}"/>
+                <Button CornerRadius="50" Text="Завершить регистрацию" BackgroundColor="White" Command="{Binding RegCommand}"/>
             </StackLayout>
         </StackLayout>  
     </ContentPage.Content>

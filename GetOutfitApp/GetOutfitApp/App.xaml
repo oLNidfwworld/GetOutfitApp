@@ -30,7 +30,7 @@
             <Style x:Key="GrayButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Black"></Setter>
                 <Setter Property="CornerRadius" Value="10"></Setter>
-                <Setter Property="Background" Value="Gray"></Setter>
+                <Setter Property="Background" Value="LightGray"></Setter>
             </Style>
             <Style x:Key="WhiteButton" TargetType="Button" BasedOn="{StaticResource GrayButton}">
                 <Setter Property="BackgroundColor" Value="Gray"></Setter>
@@ -39,7 +39,7 @@
 
             <Style TargetType="Frame" >
                 <Setter Property="CornerRadius" Value="15"></Setter>
-                <Setter Property="Background" Value="Gray"></Setter>
+                <Setter Property="Background" Value="LightGray"></Setter>
             </Style>
 
             <Style TargetType="Entry">

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GetOutfitApp.Models;
+using GetOutfitApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +12,14 @@ using Xamarin.Forms.Xaml;
 namespace GetOutfitApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WishList : ContentPage
+    public partial class WearingDetail : ContentPage
     {
-        public WishList()
+        WearingDetailViewModel wvm;
+        public WearingDetail(WearingModel wm)
         {
             InitializeComponent();
+            wvm = new WearingDetailViewModel(wm);
+            this.BindingContext = wvm;
         }
     }
 }

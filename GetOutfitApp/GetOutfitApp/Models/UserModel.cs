@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GetOutfitApp.Models
 {
-    internal class UserModel
+    public class UserModel
     {
         public int Id { get; set; }
         public string Login { get; set; }

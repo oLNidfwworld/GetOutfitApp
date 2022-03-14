@@ -36,7 +36,6 @@
         <ShellContent Title="Interests" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Interests}" />
         
         -->
-        <ShellContent Title="Outfit" ContentTemplate="{DataTemplate llc:Outfit}" Route="Outfit" />
         <ShellContent Title="Feed" ContentTemplate="{DataTemplate llc:Feed}" Route="Feed" />
         <ShellContent Title="Wish List" ContentTemplate="{DataTemplate llc:WishList}" Route="WishList"  >
         </ShellContent>

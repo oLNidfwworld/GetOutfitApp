@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 
 namespace GetOutfitApp.ViewModel
@@ -27,11 +28,11 @@ namespace GetOutfitApp.ViewModel
         {
             get
             {
-                return this._Login;
+                return this._Fullname;
             }
             set
             {
-                this._Login = value;
+                this._Fullname = value;
                 OnPropertyChanged();
             }
         }
@@ -83,5 +84,7 @@ namespace GetOutfitApp.ViewModel
             Fullname = Preferences.Get("FullName", "none");
             Login = Preferences.Get("Login", "none");
         }
+
+        
     }
 }
