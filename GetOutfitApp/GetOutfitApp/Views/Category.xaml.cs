@@ -22,13 +22,13 @@ namespace GetOutfitApp.Views
             this.BindingContext = cvm;
         }
 
-        private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedproduct = e.CurrentSelection.FirstOrDefault() as WearingModel;
             if (selectedproduct == null)
                 return;
 
-            //await Navigation.PushModalAsync(new Category(cat));
+            await Navigation.PushModalAsync(new WearingDetail(selectedproduct));
 
             ((CollectionView)sender).SelectedItem = null;
         }

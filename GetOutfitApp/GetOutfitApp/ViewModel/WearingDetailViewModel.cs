@@ -57,6 +57,7 @@ namespace GetOutfitApp.ViewModel
                 if (Preferences.ContainsKey($"WishListItem{wishlistitem}"))
                 {
                     wishlistitem++;
+                    await Shell.Current.DisplayAlert("^^", "Добавлено в корзину", "Ok");
                 }
                 else
                 {
@@ -64,6 +65,7 @@ namespace GetOutfitApp.ViewModel
                     find = false;
                     await Shell.Current.DisplayAlert("^^", "Добавлено в корзину", "Ok");
                 }
+                Isbusy = false;
             }
         }
 

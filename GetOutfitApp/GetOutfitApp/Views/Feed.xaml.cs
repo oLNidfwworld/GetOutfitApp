@@ -24,7 +24,7 @@ namespace GetOutfitApp.Views
             if (cat == null)
                 return;
 
-            await Navigation.PushAsync(new Category(cat));
+            await Navigation.PushModalAsync(new Category(cat));
 
             ((CollectionView)sender).SelectedItem = null;
         }
@@ -35,7 +35,7 @@ namespace GetOutfitApp.Views
             if (cat == null)
                 return;
 
-            await Navigation.PushAsync(new WearingDetail(cat));
+            await Navigation.PushModalAsync(new WearingDetail(cat));
 
             ((CollectionView)sender).SelectedItem = null;
         }

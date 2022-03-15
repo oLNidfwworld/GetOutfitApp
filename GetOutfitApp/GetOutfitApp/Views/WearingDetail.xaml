@@ -4,7 +4,11 @@
              xmlns:vm="clr-namespace:GetOutfitApp.ViewModel"
              InputTransparent="True"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             x:Class="GetOutfitApp.Views.WearingDetail">
+             x:Class="GetOutfitApp.Views.WearingDetail" 
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
+             Visual="Material">
    <!--
     <ContentPage.BindingContext>
         <vm:WearingDetailViewModel></vm:WearingDetailViewModel>
@@ -63,7 +67,7 @@
                     </StackLayout>
                     
                 </Frame>
-                <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}"></Button>
+                <ImageButton Grid.Row="2" Background="Black" Command="{Binding AddToWishListCommand}"> </ImageButton>
             </Grid>
         </pancake:PancakeView>
     </ContentPage.Content>
