@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace GetOutfitApp.Services
 {
@@ -14,6 +15,7 @@ namespace GetOutfitApp.Services
     {
         FirebaseClient client;
 
+     
         public WearingServicescs()
         {
             client = new FirebaseClient("https://getoutfitbase-default-rtdb.firebaseio.com/");
@@ -68,5 +70,25 @@ namespace GetOutfitApp.Services
             return latestWearing;
         }
 
+        public async Task<ObservableCollection<WearingModel>> GetWearingByIdAsync()
+        {
+            var wearingById = new ObservableCollection<WearingModel>();
+
+            bool find = true;
+            int wishlistitem = 0;
+            while (find)
+            {
+                if (Preferences.ContainsKey($"WishListItem{wishlistitem}") != false) {
+                    var item = (await GetWearingItemsAsync()).Where(p => p.CategoryId == Preferences.Get($"WishListItem{wishlistitem}", 0)).FirstOrDefault();
+                    wearingById.Add(item);
+                    wishlistitem++;
+                }
+                else
+                {
+                    find = false;
+                }
+            }
+            return wearingById;
+        }
     }
 }

@@ -36,10 +36,10 @@
         <ShellContent Title="Interests" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Interests}" />
         
         -->
-        <ShellContent Title="Feed" ContentTemplate="{DataTemplate llc:Feed}" Route="Feed" />
-        <ShellContent Title="Wish List" ContentTemplate="{DataTemplate llc:WishList}" Route="WishList"  >
+        <ShellContent Title="Главная" ContentTemplate="{DataTemplate llc:Feed}" Route="Feed" />
+        <ShellContent Title="Корзина" ContentTemplate="{DataTemplate llc:WishList}" Route="WishList"  >
         </ShellContent>
-        <ShellContent Title="Profile" ContentTemplate="{DataTemplate llc:Profile}" Route="Profile"/>
+        <ShellContent Title="Профиль" ContentTemplate="{DataTemplate llc:Profile}" Route="Profile"/>
     </TabBar>
 
 

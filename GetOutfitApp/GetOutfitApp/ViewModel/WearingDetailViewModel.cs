@@ -49,7 +49,7 @@ namespace GetOutfitApp.ViewModel
         {
             if (Isbusy)
                 return;
-                Isbusy = true;
+            Isbusy = true;
             int wishlistitem = 0;
             bool find = true;
             while (find)
@@ -57,7 +57,6 @@ namespace GetOutfitApp.ViewModel
                 if (Preferences.ContainsKey($"WishListItem{wishlistitem}"))
                 {
                     wishlistitem++;
-                    await Shell.Current.DisplayAlert("^^", "Добавлено в корзину", "Ok");
                 }
                 else
                 {

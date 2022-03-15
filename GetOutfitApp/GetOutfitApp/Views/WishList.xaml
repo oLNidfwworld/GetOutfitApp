@@ -2,10 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GetOutfitApp.Views.WishList" 
+             
+             xmlns:vm="clr-namespace:GetOutfitApp.ViewModel"
             Title="GetOutfit"
             >
   <!--Pages can be added as references or inline-->
+
+    <ContentPage.BindingContext>
+        <vm:WishListViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <Label></Label>
+        <CollectionView ItemsSource="{Binding  ItemsCart}"
+                            Margin="0,25"
+                            HeightRequest="150"
+                            WidthRequest="150"
+                            VerticalOptions="FillAndExpand"
+                            VerticalScrollBarVisibility="Never"
+                            SelectionMode="Single" 
+                            ItemsLayout="VerticalList"
+                            >
+            <CollectionView.ItemTemplate >
+
+                <DataTemplate>
+                    <Grid>
+                        <Label  Text="{Binding  Name}" HorizontalOptions="Center" Style="{StaticResource BlackLabel}" WidthRequest="120">
+                        </Label>
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
     </ContentPage.Content>
 </ContentPage>
