@@ -13,19 +13,16 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <CollectionView ItemsSource="{Binding  ItemsCart}"
-                            Margin="0,25"
-                            HeightRequest="150"
-                            WidthRequest="150"
                             VerticalOptions="FillAndExpand"
                             VerticalScrollBarVisibility="Never"
-                            SelectionMode="Single" 
+                        
                             ItemsLayout="VerticalList"
                             >
             <CollectionView.ItemTemplate >
 
                 <DataTemplate>
                     <Grid>
-                        <Label  Text="{Binding  Name}" HorizontalOptions="Center" Style="{StaticResource BlackLabel}" WidthRequest="120">
+                        <Label  Text="{Binding  Name}" HorizontalOptions="Center" Style="{StaticResource BlackLabel}">
                         </Label>
 
                     </Grid>

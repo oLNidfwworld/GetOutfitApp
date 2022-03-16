@@ -8,6 +8,7 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace GetOutfitApp.Services
 {
@@ -73,21 +74,24 @@ namespace GetOutfitApp.Services
         public async Task<ObservableCollection<WearingModel>> GetWearingByIdAsync()
         {
             var wearingById = new ObservableCollection<WearingModel>();
-
+            wearingById.Clear();
             bool find = true;
             int wishlistitem = 0;
+            var item = (await GetWearingItemsAsync());
             while (find)
-            {
-                if (Preferences.ContainsKey($"WishListItem{wishlistitem}") != false) {
-                    var item = (await GetWearingItemsAsync()).Where(p => p.CategoryId == Preferences.Get($"WishListItem{wishlistitem}", 0)).FirstOrDefault();
-                    wearingById.Add(item);
-                    wishlistitem++;
-                }
-                else
                 {
-                    find = false;
+                    if (Preferences.ContainsKey($"WishListItem{wishlistitem}") != false)
+                    {
+                        
+                        wearingById.Add(item.Where(p => p.Id == Preferences.Get($"WishListItem{wishlistitem}", 0)).FirstOrDefault());
+                        wishlistitem++;
+                    }
+                    else
+                    {
+                        find = false;
+                    }
                 }
-            }
+          
             return wearingById;
         }
     }

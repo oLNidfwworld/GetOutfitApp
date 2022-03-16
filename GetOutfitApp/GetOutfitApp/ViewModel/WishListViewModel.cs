@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace GetOutfitApp.ViewModel
 {
@@ -42,14 +43,12 @@ namespace GetOutfitApp.ViewModel
         }
         private  async  void GetItems()
         {
-            var data = (await new WearingServicescs().GetWearingByIdAsync());
-            ItemsCart.Clear();
-            foreach (var item in data)
+            var l = await new WearingServicescs().GetWearingByIdAsync();
+            foreach(var items in l)
             {
-                ItemsCart.Add(item);
+                ItemsCart.Add(items);
             }
-
         }
-    
+
     }
 }
