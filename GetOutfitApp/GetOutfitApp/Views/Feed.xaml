@@ -24,13 +24,13 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="400"></RowDefinition>
-                    <RowDefinition Height="300"></RowDefinition>
-                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="400"></RowDefinition>
+                    <RowDefinition Height="400"></RowDefinition>
                     <RowDefinition Height="300"></RowDefinition>
                 </Grid.RowDefinitions>
 
 
-                <Label Grid.Row="2" Style="{StaticResource BlackLabel}" Text="В тренде" Margin="0,0,100,0"></Label>
+                <Label Grid.Row="2" Style="{StaticResource BlackLabel}" Text="В тренде" Margin="10"></Label>
                 <CollectionView ItemsSource="{Binding TrendingItems}"
                                 
                                 SelectionChanged="CollectionView_SelectionChanged_1"
@@ -63,7 +63,7 @@
 
                 </CollectionView>
 
-                <Label Grid.Row="1" Style="{StaticResource BlackLabel}" Text="Новинки" Margin="0,0,100,0"></Label>
+                <Label Grid.Row="1" Style="{StaticResource BlackLabel}" Text="Новинки" Margin="10"></Label>
                 <CollectionView ItemsSource="{Binding LatestWearings}"
                                 SelectionChanged="CollectionView_SelectionChanged_1"
                             Margin="0,25"
@@ -95,7 +95,7 @@
 
                 </CollectionView>
 
-                <Label Grid.Row="0" Style="{StaticResource BlackLabel}" Text="Категории" Margin="0,0,100,0"></Label>
+                <Label Grid.Row="0" Style="{StaticResource BlackLabel}" Text="Категории" Margin="10"></Label>
                 <CollectionView ItemsSource="{Binding Categories}"
                                 
                             SelectionChanged="CollectionView_SelectionChanged"

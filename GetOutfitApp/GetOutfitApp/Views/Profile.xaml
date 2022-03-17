@@ -31,12 +31,7 @@
                 </Label>
 
             </StackLayout>
-            <StackLayout Margin="10">
-                <Label Style="{StaticResource HeaderLabel}">Пол</Label>
-                <RadioButton Content="Мужской"></RadioButton>
-                <RadioButton Content="Женский"></RadioButton>
-                <RadioButton Content="Небинарный"></RadioButton>
-            </StackLayout>
+           
             
         </StackLayout>
     </ContentPage.Content>

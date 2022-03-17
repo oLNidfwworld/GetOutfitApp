@@ -15,6 +15,8 @@ namespace GetOutfitApp.Views
         public WishList()
         {
             InitializeComponent();
+            
         }
+
     }
 }

@@ -15,7 +15,7 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Text="{Binding  SelectedCategory.Name}" TextColor="Black" FontAttributes="Bold" FontSize="35" Margin="25,-85,0,0"></Label>
+            <Label Grid.Row="0" Text="{Binding  SelectedCategory.Name}" TextColor="Black" FontAttributes="Bold"  Margin="10"></Label>
             <ImageButton></ImageButton>
             <pancake:PancakeView Grid.Row="2" CornerRadius="30" BackgroundColor="White" Margin="0,-40">
                 <Grid Padding="25,30">
@@ -27,8 +27,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding TotalItems}"></Label>
-                    <Image Grid.Row="0" Grid.Column="1" Source="More"></Image>
+                    <Label Style="{StaticResource BlackLabel}" Grid.Row="0" Grid.Column="0" Text="{Binding TotalItems}"></Label>
                     <CollectionView ItemsSource="{Binding WearingByCategory}" VerticalOptions="Start" VerticalScrollBarVisibility="Never" 
                                     Grid.Row="1" 
                                     Grid.Column="0" 

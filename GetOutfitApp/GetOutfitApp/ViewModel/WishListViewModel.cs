@@ -18,6 +18,7 @@ namespace GetOutfitApp.ViewModel
         {
             ItemsCart = new ObservableCollection<WearingModel>();
             GetItems();
+            
         }
         private  async  void GetItems()
         {
@@ -28,6 +29,8 @@ namespace GetOutfitApp.ViewModel
                 ItemsCart.Add(items);
             }
         }
+
+
 
     }
 }

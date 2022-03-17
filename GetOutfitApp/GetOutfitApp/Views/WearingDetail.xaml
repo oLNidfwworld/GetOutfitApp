@@ -15,7 +15,7 @@
         <pancake:PancakeView BackgroundColor="White" CornerRadius="20,20,0,0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
                     <RowDefinition Height="3*"></RowDefinition>
                     <RowDefinition Height="1*"></RowDefinition>
                     
@@ -25,7 +25,7 @@
                     
                 </Frame>
 
-                <Frame HasShadow="False" Grid.Row="1" CornerRadius="20">
+                <Frame HasShadow="False" Grid.Row="1" Background="Transparent" CornerRadius="20">
                     
                     <StackLayout>
                         <Label Style="{StaticResource BlackLabel}" HorizontalOptions="Center">
@@ -52,18 +52,10 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
-                        <Label Style="{StaticResource BlackLabel}">
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Категория:"></Span>
-                                    <Span Text="Категория"></Span>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
                     </StackLayout>
                     
                 </Frame>
-                <ImageButton Grid.Row="2" Background="Black" Command="{Binding AddToWishListCommand}"> </ImageButton>
+                <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}" Style="{StaticResource GrayButton}"> </Button>
             </Grid>
         </pancake:PancakeView>
     </ContentPage.Content>
