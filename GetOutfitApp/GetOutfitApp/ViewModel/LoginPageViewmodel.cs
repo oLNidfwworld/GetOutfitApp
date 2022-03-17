@@ -107,12 +107,12 @@ namespace GetOutfitApp.ViewModel
                 Isbusy = true;
                 var usersrvs = new UserServices();
                 Result = await usersrvs.LoginUser(Login, Password);
-                if (Result)
+                if (Result && (((isNullOrEmpty(Login)) || checkPass(Password)))) 
                 {
                     Preferences.Set("Login", Login);
                     var user = await usersrvs.GetUser(Login);
                     Preferences.Set("FullName", user.Object.Fullname);
-                    
+
                     await Shell.Current.GoToAsync($"//{nameof(Feed)}");
                 }
                 else
@@ -149,6 +149,24 @@ namespace GetOutfitApp.ViewModel
             }
         }
         #endregion
+
+
+        bool isNullOrEmpty(string s)
+        {
+            return !(s == null || s == "" || string.IsNullOrEmpty(s));
+        }
+
+        bool checkPass(string s)
+        {
+            if (s.Length < 8 || isNullOrEmpty(s))
+            {
+                return false;
+            }
+            else
+            {
+               return true;
+            }
+        }
 
     }
 }

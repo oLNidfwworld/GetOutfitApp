@@ -12,38 +12,17 @@ namespace GetOutfitApp.ViewModel
     class WishListViewModel:BaseViewModel
     {
 
-        private ObservableCollection<WearingModel> _ItemsCart;
-        public ObservableCollection<WearingModel> ItemsCart
-        {
-            get { return _ItemsCart; }
-            set
-            {
-                _ItemsCart = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private bool _Isbusy;
-        public bool Isbusy
-        {
-            get
-            {
-                return this._Isbusy;
-            }
-            set
-            {
-                this._Isbusy = value;
-                OnPropertyChanged();
-            }
-        }
+        public ObservableCollection<WearingModel> ItemsCart { get; set; }
 
         public WishListViewModel()
         {
+            ItemsCart = new ObservableCollection<WearingModel>();
             GetItems();
         }
         private  async  void GetItems()
         {
             var l = await new WearingServicescs().GetWearingByIdAsync();
+            ItemsCart.Clear();
             foreach(var items in l)
             {
                 ItemsCart.Add(items);

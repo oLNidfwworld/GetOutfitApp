@@ -7,20 +7,17 @@
     <ContentPage.BindingContext>
         <vm:RegistrationPageViewmodel/>
     </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <StackLayout>
+    <ContentPage.Content >
+        <StackLayout Background="White">
             <Label Text="Регистрация" Style="{StaticResource HeaderLabel}" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" Margin="10" FontSize="30"/>
             <StackLayout Padding="40">
                 <Entry Placeholder="Имя" HorizontalTextAlignment="Center"   Text="{Binding Fullname}"/>
                 <Entry Placeholder="Придумайте логин" HorizontalTextAlignment="Center" Text="{Binding Login}"/>
+                
                 <Entry Placeholder="Пароль" HorizontalTextAlignment="Center" Text="{Binding Password}"/>
                 <Entry Placeholder="Повторите пароль" IsPassword="True" HorizontalTextAlignment="Center" />
-                <Label Text="Null"/>
-                
-                <Entry Placeholder="E-mail" HorizontalTextAlignment="Center" FontSize="15" Text="{Binding Email}"/>
-                <Label Style ="{StaticResource BlackLabel}" Text="Дата рождения"  Margin="0,0,0, 4" />
-                <DatePicker MinimumDate="01/01/1970" MaximumDate="11/03/2022" FontSize="15" TextColor="Black"/>
-                <Button CornerRadius="50" Text="Завершить регистрацию" BackgroundColor="White" Command="{Binding RegCommand}"/>
+                <Entry Placeholder="Почта"  HorizontalTextAlignment="Center" Text="{Binding Email}" />
+                <Button Style="{StaticResource GrayButton}" Text="Завершить регистрацию" Command="{Binding RegCommand}"/>
             </StackLayout>
         </StackLayout>  
     </ContentPage.Content>

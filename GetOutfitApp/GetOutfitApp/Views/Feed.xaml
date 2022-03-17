@@ -16,7 +16,7 @@
         <vm:FeedViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem  Text="Logout" Command="{Binding LogoutСommand}" />
+        <ToolbarItem  Text="Выход" Command="{Binding LogoutСommand}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
 

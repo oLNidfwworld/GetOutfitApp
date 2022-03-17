@@ -115,15 +115,15 @@ namespace GetOutfitApp.ViewModel
             {
                 Isbusy = true;
                 var userServices = new UserServices();
-                Result = await userServices.RegisterUser(Login, Password, Email,Fullname);
-                if (Result)
+                Result = await userServices.RegisterUser(Login, Password, Email, Fullname);
+                if (Result &&( (isNullOrEmpty(Login) || checkPass(Password) || isNullOrEmpty(Email) || isNullOrEmpty(Fullname))) )
                 {
                     await Shell.Current.DisplayAlert("Успешно", "Пользователь создан!", "OK");
                     await Shell.Current.GoToAsync("..");
                 }
                 else
                 {
-                    await Shell.Current.DisplayAlert("Ошибка", "Пользователь уже существует", "OK");
+                    await Shell.Current.DisplayAlert("Ошибка", "Некоректные данные или пользователь уже существует", "OK");
                 }
             }
             catch (Exception ex)
@@ -137,5 +137,21 @@ namespace GetOutfitApp.ViewModel
         }
         #endregion
 
+        bool isNullOrEmpty(string s)
+        {
+            return !(s == null || s == "" || string.IsNullOrEmpty(s));
+        }
+
+        bool checkPass(string s)
+        {
+            if (s.Length < 8 || isNullOrEmpty(s))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }

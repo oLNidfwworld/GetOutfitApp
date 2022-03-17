@@ -23,14 +23,15 @@
                 <Setter Property="FontSize" Value="25"></Setter>
                 <Setter Property="FontAttributes" Value="Bold"></Setter>
             </Style>
+            
             <Style x:Key="WhiteLabel"  TargetType="Label" BasedOn="{StaticResource BlackLabel}">
                 <Setter Property="TextColor" Value="White"></Setter>
             </Style>
 
             <Style x:Key="GrayButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Black"></Setter>
-                <Setter Property="CornerRadius" Value="10"></Setter>
-                <Setter Property="Background" Value="LightGray"></Setter>
+                <Setter Property="BackgroundColor" Value="LightGray"></Setter>
+                <Setter Property="CornerRadius" Value="50"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
             </Style>
             <Style x:Key="WhiteButton" TargetType="Button" BasedOn="{StaticResource GrayButton}">
                 <Setter Property="BackgroundColor" Value="Gray"></Setter>
@@ -46,8 +47,6 @@
                 <Setter Property="FontSize" Value="20"></Setter>
                 <Setter Property="TextColor" Value="Black"></Setter>
                 <Setter Property="PlaceholderColor" Value="Gray"></Setter>
-            </Style>
-            <Style TargetType="Image">
             </Style>
         </ResourceDictionary>
     </Application.Resources>
