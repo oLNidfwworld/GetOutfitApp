@@ -5,8 +5,8 @@ Outfit store app
 
 ## Installation
 
-https://github.com/oLNidfwworld/GetOutfitApp/tree/master/Build <\br>
-apk for android. Download to phone and install <\br>
+https://github.com/oLNidfwworld/GetOutfitApp/tree/master/Build </br>
+apk for android. Download to phone and install </br>
 no build for ios yet
 
 ## Individual Screenshots
@@ -22,5 +22,5 @@ no build for ios yet
 
 ## Data
 
-Data is stored on Firebase <\br>
+Data is stored on Firebase </br>
 json file import: https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Data.json
