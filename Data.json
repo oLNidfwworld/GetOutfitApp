@@ -1,0 +1,148 @@
+{
+  "Categories" : {
+    "ASDSACSaCAS" : {
+      "Id" : 0,
+      "ImageUrl" : "https://cdn2.iconfinder.com/data/icons/clothes-outline-24-px/24/Mini_skirt_skirt_slit_skirt_woman_clothing_woman_wear-512.png",
+      "Name" : "Юбки"
+    },
+    "fSascas" : {
+      "Id" : 2,
+      "ImageUrl" : "https://cdn3.iconfinder.com/data/icons/essential-pack/32/39-Slippers-512.png",
+      "Name" : "Тапочки"
+    },
+    "ФЫВФЫсф" : {
+      "Id" : 1,
+      "ImageUrl" : "https://cdn0.iconfinder.com/data/icons/lightly-icons/30/shirt-480.png",
+      "Name" : "Футболки"
+    }
+  },
+  "Users" : {
+    "-My9Pbvg-drqSvGKB-eG" : {
+      "Email" : "grishkaromka@mail.ru",
+      "Fullname" : "Roman Grishin",
+      "Id" : 0,
+      "Login" : "greamer_dri",
+      "Password" : "12341234"
+    },
+    "-MyOSj61zuQB1HIl5JmY" : {
+      "Id" : 0
+    },
+    "ASDASjiosadON" : {
+      "Email" : "kuvetov@bk.ru",
+      "Fullname" : "Куветов Даниил",
+      "Id" : 1,
+      "Login" : "oLNi",
+      "Password" : "kakula321"
+    }
+  },
+  "Wearing" : {
+    "ASDsacascas" : {
+      "CategoryId" : 0,
+      "Id" : 1,
+      "ImageUrl" : "https://aliradar.com/api/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHd44a590024154fdc87e25c17ed293fbdg.jpg",
+      "Name" : "Юбка в складку с высокой талией",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 12
+    },
+    "DASDAXCxcsada" : {
+      "CategoryId" : 0,
+      "Id" : 0,
+      "ImageUrl" : "https://cutur.ru/wp-content/uploads/_pu/13/12147071.jpg",
+      "Name" : "Юбки клеш с высокой талией",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 112
+    },
+    "DFHSDFSADAS" : {
+      "CategoryId" : 0,
+      "Id" : 6,
+      "ImageUrl" : "https://img.ltwebstatic.com/images3_pi/2021/02/01/16121589235be077bcc56b2947ae521b153f3b70b1_thumbnail_600x.webp",
+      "Name" : "Юбка с карманом с пряжей",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 5323
+    },
+    "JBJUIOBOBNLnk" : {
+      "CategoryId" : 1,
+      "Id" : 9,
+      "ImageUrl" : "https://xn--37-dlcmno3cf.xn--p1ai/wa-data/public/shop/products/79/46/54679/images/116663/116663.970x0.jpg",
+      "Name" : "Однотонная футболка",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 8881
+    },
+    "SACACASZXGF" : {
+      "CategoryId" : 0,
+      "Id" : 4,
+      "ImageUrl" : "https://images.wbstatic.net/big/new/10640000/10644339-1.jpg",
+      "Name" : "Юбка с молнией",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 512
+    },
+    "SFGXCazcxz" : {
+      "CategoryId" : 0,
+      "Id" : 5,
+      "ImageUrl" : "https://img.ltwebstatic.com/images3_pi/2021/02/01/16121589235be077bcc56b2947ae521b153f3b70b1_thumbnail_600x.webp",
+      "Name" : "Юбка с принтом и разрезом",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 1212
+    },
+    "UOBibHIUB" : {
+      "CategoryId" : 2,
+      "Id" : 10,
+      "ImageUrl" : "https://ae04.alicdn.com/kf/H08841372a9ca49feb413ea17e82fc539A/2021.jpg_640x640.jpg",
+      "Name" : "Тапочки с милым медведем",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 0
+    },
+    "jiOOInklui" : {
+      "CategoryId" : 1,
+      "Id" : 8,
+      "ImageUrl" : "https://img.ltwebstatic.com/images3_pi/2021/05/21/162157484341fd4f3e2527f6cfeb98e1a8a35610f4_thumbnail_600x.webp",
+      "Name" : "Футболка оверсайз бабочка с тектовым принтом",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 882
+    },
+    "nNUIBkbkb" : {
+      "CategoryId" : 2,
+      "Id" : 12,
+      "ImageUrl" : "https://images.prom.ua/1729783068_w640_h640_shlepki-zhenskie-letnie.jpg",
+      "Name" : "Вьетнамки с цветком",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 100
+    },
+    "nioubHHKLK" : {
+      "CategoryId" : 2,
+      "Id" : 11,
+      "ImageUrl" : "https://static.insales-cdn.com/r/oIUM9eR_t8c/rs:fit:600:600:1/plain/images/products/1/5767/231863943/%D0%A2%D0%B0%D0%BF%D0%BE%D1%87%D0%BA%D0%B8-%D0%B2%D1%8C%D0%B5%D1%82%D0%BD%D0%B0%D0%BC%D0%BA%D0%B8-%D0%BF%D0%B5%D0%BD%D0%BE%D0%BF%D1%80%D0%BE%D0%BF%D0%B8%D0%BB%D0%B5%D0%BD-%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5.jpg@webp",
+      "Name" : "Вьетнамки черные",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 991
+    },
+    "sadaAXVasf" : {
+      "CategoryId" : 0,
+      "Id" : 2,
+      "ImageUrl" : "https://images11.cosmopolitan.ru/upload/img_cache/d8e/d8e308c4f890a685606b019342d3897a_cropped_513x655.webp",
+      "Name" : "Юбка с разрезом",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 54
+    },
+    "sadacxzSDTG" : {
+      "CategoryId" : 1,
+      "Id" : 7,
+      "ImageUrl" : "https://www.bosmenti.com/image/cache/catalog/t-shirt/bisiklet-yaka/4585619545037-01-936x1404.jpg",
+      "Name" : "Футболка к круглым воротником",
+      "Price" : 12512,
+      "Size" : 48,
+      "Watched" : 74
+    }
+  }
+}
