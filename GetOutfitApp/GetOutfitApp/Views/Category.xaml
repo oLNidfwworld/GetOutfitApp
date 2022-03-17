@@ -27,7 +27,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Style="{StaticResource BlackLabel}" Grid.Row="0" Grid.Column="0" Text="{Binding TotalItems}"></Label>
+                   
                     <CollectionView ItemsSource="{Binding WearingByCategory}" VerticalOptions="Start" VerticalScrollBarVisibility="Never" 
                                     Grid.Row="1" 
                                     Grid.Column="0" 
@@ -68,7 +68,7 @@
                                                    VerticalOptions="Center">
                                                 <Label.FormattedText>
                                                     <FormattedString>
-                                                        <Span Text="Цена"></Span>
+                                                        <Span Text="Цена:"></Span>
                                                         <Span Text="{Binding Price}"></Span>
                                                     </FormattedString>
                                                 </Label.FormattedText>
