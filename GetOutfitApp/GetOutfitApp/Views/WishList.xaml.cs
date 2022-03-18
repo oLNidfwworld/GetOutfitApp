@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GetOutfitApp.Models;
+using GetOutfitApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +14,13 @@ namespace GetOutfitApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WishList : ContentPage
     {
+
         public WishList()
         {
             InitializeComponent();
             
         }
 
+        
     }
 }

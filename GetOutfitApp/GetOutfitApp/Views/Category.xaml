@@ -59,7 +59,7 @@
                                                 <Image Source="{Binding ImageUrl}" HeightRequest="100" WidthRequest="95" Aspect="AspectFill"></Image>
                                                 
                                             </pancake:PancakeView>
-                                            <Label  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                                            <Label  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource BlackLabel}"
                                                         Text="{Binding Name} " FontSize="15" FontAttributes="Bold"/>
                                             <!-- <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
                                                         Text=" " TextColor="Black" FontSize="15" FontAttributes="Bold"/> -->
