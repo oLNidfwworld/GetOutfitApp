@@ -71,28 +71,6 @@ namespace GetOutfitApp.Services
             return latestWearing;
         }
 
-        public async Task<ObservableCollection<WearingModel>> GetWearingByIdAsync()
-        {
-            var wearingById = new ObservableCollection<WearingModel>();
-            wearingById.Clear();
-            bool find = true;
-            int wishlistitem = 0;
-            var item = (await GetWearingItemsAsync());
-            while (find)
-                {
-                    if (Preferences.ContainsKey($"WishListItem{wishlistitem}") != false)
-                    {
-                        
-                        wearingById.Add(item.Where(p => p.Id == Preferences.Get($"WishListItem{wishlistitem}", 0)).FirstOrDefault());
-                        wishlistitem++;
-                    }
-                    else
-                    {
-                        find = false;
-                    }
-                }
-          
-            return wearingById;
-        }
+       
     }
 }

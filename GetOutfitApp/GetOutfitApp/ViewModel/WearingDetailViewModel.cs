@@ -47,25 +47,7 @@ namespace GetOutfitApp.ViewModel
 
         private async void AddToWishListAsync()
         {
-            if (Isbusy)
-                return;
-            Isbusy = true;
-            int wishlistitem = 0;
-            bool find = true;
-            while (find)
-            {
-                if (Preferences.ContainsKey($"WishListItem{wishlistitem}"))
-                {
-                    wishlistitem++;
-                }
-                else
-                {
-                    Preferences.Set($"WishListItem{wishlistitem}",SelectedWearing.Id);
-                    find = false;
-                    await Shell.Current.DisplayAlert("^^", "Добавлено в корзину", "Ok");
-                }
-                Isbusy = false;
-            }
+            //делать добавление без преферансов
         }
 
     }

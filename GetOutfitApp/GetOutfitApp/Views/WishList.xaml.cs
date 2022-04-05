@@ -14,13 +14,20 @@ namespace GetOutfitApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WishList : ContentPage
     {
-
+        WishListViewModel wm;
         public WishList()
         {
             InitializeComponent();
-            
+            wm = new WishListViewModel();
+            this.BindingContext = wm;
         }
 
-        
+        private void cw_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.CurrentSelection != null)
+                return;
+            else
+                return;
+        }
     }
 }

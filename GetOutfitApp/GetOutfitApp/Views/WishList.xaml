@@ -7,9 +7,6 @@
             Title="GetOutfit"
             >
   <!--Pages can be added as references or inline-->
-    <ContentPage.BindingContext>
-        <vm:WishListViewModel></vm:WishListViewModel>
-    </ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -18,7 +15,8 @@
                 <RowDefinition Height="1*"></RowDefinition>
 
             </Grid.RowDefinitions>
-
+            
+            
             <ScrollView Grid.Row="0">
                 <CollectionView x:Name="cw" ItemsSource="{Binding  ItemsCart}"
                             VerticalOptions="FillAndExpand"
@@ -26,12 +24,11 @@
                             SelectionMode="Multiple"
                             ItemsLayout="VerticalList" Margin="10"
                             SelectedItems="{Binding SelectedItem}"
-                            SelectedItem="{Binding SelectedItem}"
                             >
 
                     <CollectionView.ItemTemplate  >
-
-                        <DataTemplate >
+        
+                        <DataTemplate  >
                             <Grid HeightRequest="150">
                                 <pancacke:PancakeView Margin="10" CornerRadius="30" BackgroundColor="LightGray" >
 
