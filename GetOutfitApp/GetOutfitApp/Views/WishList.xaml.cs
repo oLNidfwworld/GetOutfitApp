@@ -1,4 +1,5 @@
 ﻿using GetOutfitApp.Models;
+using GetOutfitApp.Services;
 using GetOutfitApp.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -15,25 +16,38 @@ namespace GetOutfitApp.Views
     public partial class WishList : ContentPage
     {
         WishListViewModel wm;
+        List<object> list;
         public WishList()
         {
             InitializeComponent();
             wm = new WishListViewModel();
             this.BindingContext = wm;
+            list= new List<object>();
         }
 
-        private void cw_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.CurrentSelection != null)
-                return;
-            else
-                return;
-        }
 
         private void ContentPage_Appearing(object sender, EventArgs e)
         {
             wm.ItemsCart.Clear();
             wm.GetItems();
+        }
+
+        private  void cw_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            
+            list = e.CurrentSelection.ToList();
+
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            foreach(var item in list)
+            {
+               await  new WishListServices().RemoveCartItemAsync((item as WishListModel).Id);
+                wm.ItemsCart.Remove(item as WishListModel);
+            }
+            list.Clear();
+            await Shell.Current.DisplayAlert("Успешно", "Товары убраны из корзины", "OK");
         }
     }
 }

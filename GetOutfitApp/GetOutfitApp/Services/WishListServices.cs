@@ -66,5 +66,10 @@ namespace GetOutfitApp.Services
             }
             return itemslist;
         }
+        public async Task RemoveCartItemAsync(int id)
+        {
+            var toRemoveItem = (await client.Child("WishList").OnceAsync<WishListModel>()).FirstOrDefault(i => i.Object.Id==id);
+            await client.Child("WishList").Child(toRemoveItem.Key).DeleteAsync();
+        }
     }
 }

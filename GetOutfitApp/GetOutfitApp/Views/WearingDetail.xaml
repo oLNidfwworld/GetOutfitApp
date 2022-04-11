@@ -10,7 +10,14 @@
         <vm:WearingDetailViewModel></vm:WearingDetailViewModel>
     </ContentPage.BindingContext>
     -->
-    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style  TargetType="Label">
+                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content >
         <pancake:PancakeView BackgroundColor="White" CornerRadius="20,20,0,0">
             <Grid>
@@ -20,23 +27,22 @@
                     <RowDefinition Height="1*"></RowDefinition>
                     
                 </Grid.RowDefinitions>
-                <Frame HasShadow="False" Grid.Row="0" Background="Transparent" >
+                <pancake:PancakeView  Grid.Row="0" BackgroundColor="LightGray"  CornerRadius="0,0,20,20">
                     <Image Source="{Binding SelectedWearing.ImageUrl}"></Image>
-                    
-                </Frame>
+
+                </pancake:PancakeView>
 
                 <Frame HasShadow="False" Grid.Row="1" Background="Transparent" CornerRadius="20">
                     
                     <StackLayout>
-                        <Label Style="{StaticResource BlackLabel}" HorizontalOptions="Center">
+                        <Label HorizontalOptions="Center" Style="{StaticResource HeaderLabel}">
                             <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Название :"></Span>
+                                <FormattedString >
                                     <Span Text="{Binding SelectedWearing.Name}"></Span>
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
-                        <Label Style="{StaticResource BlackLabel}">
+                        <Label >
                             <Label.FormattedText>
                                 <FormattedString>
                                     <Span Text="Цена:"></Span>
@@ -44,7 +50,7 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
-                        <Label Style="{StaticResource BlackLabel}">
+                        <Label>
                             <Label.FormattedText>
                                 <FormattedString>
                                     <Span Text="Размер:"></Span>
@@ -55,7 +61,7 @@
                     </StackLayout>
                     
                 </Frame>
-                <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}" Style="{StaticResource GrayButton}"> </Button>
+                <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}" Margin="30" > </Button>
             </Grid>
         </pancake:PancakeView>
     </ContentPage.Content>

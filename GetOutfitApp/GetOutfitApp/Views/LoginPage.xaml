@@ -15,7 +15,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout  VerticalOptions="StartAndExpand" Margin="0,100,0,0" Padding="30" HorizontalOptions="FillAndExpand">
-            <Label Style="{StaticResource HeaderLabel}" HorizontalOptions="Center" Margin="0,100,0,100">Get Outfit</Label>
+            <Label TextColor="Black" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,100,0,100">Get Outfit</Label>
             <Entry  Placeholder="Логин" TextColor="Black" PlaceholderColor="Gray" Text="{Binding Login}" >
 
             </Entry>
@@ -23,12 +23,12 @@
 
             </Entry>
             <StackLayout Orientation="Vertical" >
-                <Button Text="Авторизация" Style="{StaticResource GrayButton}" BorderWidth="1.5" TextColor="White" Command="{Binding LoginCommand}"></Button>
+                <Button Text="Авторизация" BorderWidth="1.5"  Command="{Binding LoginCommand}"></Button>
                 <Label HorizontalOptions="Center" Margin="10" FontSize="15">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Нет аккаунта? " Style="{StaticResource BlackLabel}"/>
-                            <Span Text="Регистрация" Style="{StaticResource BlackLabel}" FontAttributes="Bold" TextDecorations="Underline" FontSize="15"/>
+                            <Span Text="Нет аккаунта? " />
+                            <Span Text="Регистрация" FontAttributes="Bold" TextDecorations="Underline" FontSize="15"/>
                         </FormattedString>
 
                     </Label.FormattedText>

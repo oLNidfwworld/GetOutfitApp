@@ -15,8 +15,8 @@
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Имя: " Style="{StaticResource BlackLabel}"/>
-                            <Span Text="{Binding Fullname}" Style="{StaticResource BlackLabel}"  />
+                            <Span Text="Имя: " />
+                            <Span Text="{Binding Fullname}"   />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
@@ -24,8 +24,8 @@
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Логин: " Style="{StaticResource BlackLabel}"/>
-                            <Span Text="{Binding Login}" Style="{StaticResource BlackLabel}"  />
+                            <Span Text="Логин: " />
+                            <Span Text="{Binding Login}"  />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>

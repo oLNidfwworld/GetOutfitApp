@@ -119,7 +119,7 @@ namespace GetOutfitApp.ViewModel
                 }
                 else
                 {
-                    await Shell.Current.DisplayAlert("Error", "Invalid Login or Password", "OK");
+                    await Shell.Current.DisplayAlert("Ошибка", "Неправильный логин или пароль", "OK");
                 }
             }
             catch(Exception e)

@@ -13,19 +13,12 @@ namespace GetOutfitApp.ViewModel
 {
     class WishListViewModel:BaseViewModel
     {
-        private ObservableCollection<WishListModel> _SelectedItems;
-        public ObservableCollection<WishListModel> SelectedItem { get { return _SelectedItems; } set { _SelectedItems = value; OnPropertyChanged(); OnCollectionChanged(NotifyCollectionChangedAction.Reset);
-            }}
-
         public ObservableCollection<WishListModel> ItemsCart { get; set; }
 
-        public Command RemoveItemsCommand { get; private set; } // создать функцию
 
         public WishListViewModel()
         {
             ItemsCart = new ObservableCollection<WishListModel>();
-            SelectedItem = new ObservableCollection<WishListModel>();
-            SelectedItem.Clear();
             
 
         }

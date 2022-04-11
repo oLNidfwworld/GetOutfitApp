@@ -49,7 +49,7 @@ namespace GetOutfitApp.ViewModel
         private async void AddToWishListAsync()
         {
            await new WishListServices().AddToCart(Preferences.Get("UserId", 0), SelectedWearing.Id);
-            await Shell.Current.DisplayAlert("добавлено", "Успешно добавлено", "Ok");
+            await Shell.Current.DisplayAlert("Успешно", "Товар добавлен в корзину", "Ok");
         }
 
     }

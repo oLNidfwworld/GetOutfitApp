@@ -17,7 +17,7 @@
                 <Entry Placeholder="Пароль" HorizontalTextAlignment="Center" Text="{Binding Password}"/>
                 <Entry Placeholder="Повторите пароль" IsPassword="True" HorizontalTextAlignment="Center" />
                 <Entry Placeholder="Почта"  HorizontalTextAlignment="Center" Text="{Binding Email}" />
-                <Button Style="{StaticResource GrayButton}" Text="Завершить регистрацию" Command="{Binding RegCommand}"/>
+                <Button  Text="Завершить регистрацию" Command="{Binding RegCommand}"/>
             </StackLayout>
         </StackLayout>  
     </ContentPage.Content>
