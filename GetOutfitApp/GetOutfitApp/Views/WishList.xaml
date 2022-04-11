@@ -4,6 +4,7 @@
              x:Class="GetOutfitApp.Views.WishList" 
              xmlns:pancacke="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:vm="clr-namespace:GetOutfitApp.ViewModel"
+             Appearing="ContentPage_Appearing"
             Title="GetOutfit"
             >
   <!--Pages can be added as references or inline-->

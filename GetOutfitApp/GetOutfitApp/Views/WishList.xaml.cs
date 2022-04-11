@@ -29,5 +29,11 @@ namespace GetOutfitApp.Views
             else
                 return;
         }
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            wm.ItemsCart.Clear();
+            wm.GetItems();
+        }
     }
 }

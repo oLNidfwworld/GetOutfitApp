@@ -27,13 +27,13 @@ namespace GetOutfitApp.Services
             {
                 await client.Child("Users").PostAsync(new UserModel()
                 {
+                    Id = new Random().Next(0, int.MaxValue),    
                     Login = login,
                     Password = password,
                     Email = email,
                     Fullname = fullname
                 });
                 return true;
-
             }
             else
             {

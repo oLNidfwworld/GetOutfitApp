@@ -5,6 +5,7 @@ using System.Text;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using GetOutfitApp.Services;
 
 namespace GetOutfitApp.ViewModel
 {
@@ -47,7 +48,8 @@ namespace GetOutfitApp.ViewModel
 
         private async void AddToWishListAsync()
         {
-            //делать добавление без преферансов
+           await new WishListServices().AddToCart(Preferences.Get("UserId", 0), SelectedWearing.Id);
+            await Shell.Current.DisplayAlert("добавлено", "Успешно добавлено", "Ok");
         }
 
     }

@@ -5,7 +5,7 @@
              xmlns:vm ="clr-namespace:GetOutfitApp.ViewModel" 
              
              
-             
+             xmlns:pc ="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              Shell.TabBarIsVisible="True"
              Shell.NavBarIsVisible="True"
              Shell.FlyoutBehavior="Disabled"
@@ -51,9 +51,9 @@
                                     <RowDefinition Height="75*"></RowDefinition>
                                     <RowDefinition Height="25*"></RowDefinition>
                                 </Grid.RowDefinitions>
-                                <Frame Grid.Row="0" HeightRequest="125"  WidthRequest="80"  Margin="10" HasShadow="False"  BackgroundColor="#feeee8" CornerRadius="10">
-                                    <Image Source="{Binding  ImageUrl}"></Image>
-                                </Frame>
+                                <pc:PancakeView BackgroundColor="LightGray" Grid.Row="0" HeightRequest="100"  WidthRequest="175"  Margin="10" CornerRadius="10">
+                                    <Image Margin="10" Aspect="AspectFit" Source="{Binding  ImageUrl}"></Image>
+                                </pc:PancakeView>
                                 <Label Grid.Row="1" Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource BlackLabel}" WidthRequest="120">
                                 </Label>
 
@@ -83,9 +83,10 @@
                                     <RowDefinition Height="75*"></RowDefinition>
                                     <RowDefinition Height="25*"></RowDefinition>
                                 </Grid.RowDefinitions>
-                                <Frame Grid.Row="0" HeightRequest="125"  WidthRequest="80"  Margin="10" HasShadow="False"  BackgroundColor="#feeee8" CornerRadius="10">
-                                    <Image Source="{Binding  ImageUrl}"></Image>
-                                </Frame>
+
+                                <pc:PancakeView BackgroundColor="LightGray" Grid.Row="0" HeightRequest="100"  WidthRequest="175"  Margin="10"   CornerRadius="10">
+                                    <Image Margin="10" Aspect="AspectFit" Source="{Binding  ImageUrl}"></Image>
+                                </pc:PancakeView>
                                 <Label Grid.Row="1" Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource BlackLabel}" WidthRequest="120">
                                 </Label>
 

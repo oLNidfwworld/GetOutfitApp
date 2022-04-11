@@ -109,9 +109,11 @@ namespace GetOutfitApp.ViewModel
                 Result = await usersrvs.LoginUser(Login, Password);
                 if (Result && (((isNullOrEmpty(Login)) || checkPass(Password)))) 
                 {
-                    Preferences.Set("Login", Login);
+                   
                     var user = await usersrvs.GetUser(Login);
+                    Preferences.Set("Login", Login);
                     Preferences.Set("FullName", user.Object.Fullname);
+                    Preferences.Set("UserId", user.Object.Id);
 
                     await Shell.Current.GoToAsync($"//{nameof(Feed)}");
                 }
