@@ -53,7 +53,7 @@
                                 <Label>
                                     <Label.FormattedText>
                                         <FormattedString>
-                                            <Span Text="Цена:" ></Span>
+                                            <Span Text="Размер: " ></Span>
                                             <Span Text="{Binding SelectedWearing.Size}" ></Span>
                                         </FormattedString>
                                     </Label.FormattedText>
