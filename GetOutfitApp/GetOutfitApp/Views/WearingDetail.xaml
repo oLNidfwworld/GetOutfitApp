@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:GetOutfitApp.ViewModel"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:toolkit="http://xamarin.com/schemas/2020/toolkit"
              x:Class="GetOutfitApp.Views.WearingDetail" 
              Visual="Material">
-   <!--
-    <ContentPage.BindingContext>
+
+    <!-- <ContentPage.BindingContext>
         <vm:WearingDetailViewModel></vm:WearingDetailViewModel>
-    </ContentPage.BindingContext>
-    -->
+    </ContentPage.BindingContext> -->
+   
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style  TargetType="Label">
@@ -19,50 +20,61 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content >
-        <pancake:PancakeView BackgroundColor="White" CornerRadius="20,20,0,0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"></RowDefinition>
-                    <RowDefinition Height="3*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    
-                </Grid.RowDefinitions>
-                <pancake:PancakeView  Grid.Row="0" BackgroundColor="LightGray"  CornerRadius="0,0,20,20">
-                    <Image Source="{Binding SelectedWearing.ImageUrl}"></Image>
+        <ScrollView>
+            <pancake:PancakeView BackgroundColor="White" CornerRadius="20,20,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
 
-                </pancake:PancakeView>
+                    </Grid.RowDefinitions>
+                    <pancake:PancakeView  Grid.Row="0" CornerRadius="0,0,20,20">
+                        <Image Source="{Binding SelectedWearing.ImageUrl}"></Image>
 
-                <Frame HasShadow="False" Grid.Row="1" Background="Transparent" CornerRadius="20">
-                    
-                    <StackLayout>
-                        <Label HorizontalOptions="Center" Style="{StaticResource HeaderLabel}">
-                            <Label.FormattedText>
-                                <FormattedString >
-                                    <Span Text="{Binding SelectedWearing.Name}"></Span>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
-                        <Label >
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Цена:"></Span>
-                                    <Span Text="{Binding SelectedWearing.Price}"></Span>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
-                        <Label>
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Размер:"></Span>
-                                    <Span Text="{Binding SelectedWearing.Size}"></Span>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
+                    </pancake:PancakeView>
+
+                    <StackLayout Grid.Row="1" >
+                        <Frame Background="LightGray" HasShadow="True" toolkit:ShadowEffect.Opacity="10" Margin="30,30,30,10">
+                            <Label  >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding SelectedWearing.Price}"></Span>
+                                        <Span Text=" Р"></Span>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame Margin="20" BorderColor="LightGray" CornerRadius="5" Background="White">
+                            <StackLayout>
+                                <Label Margin="5,10,5,10" Text="О товаре" Style="{StaticResource HeaderLabel}"></Label>
+                                <Label Text="{Binding SelectedWearing.Name}"></Label>
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Цена:" ></Span>
+                                            <Span Text="{Binding SelectedWearing.Size}" ></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Продавец:" ></Span>
+                                             
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+                        
                     </StackLayout>
-                    
-                </Frame>
-                <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}" Margin="30" > </Button>
-            </Grid>
-        </pancake:PancakeView>
+
+                    <Button Grid.Row="2" Text="Добавить в корзину" Command="{Binding AddToWishListCommand}" Margin="30" ></Button>
+                </Grid>
+            </pancake:PancakeView>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -116,7 +116,7 @@
                                     <RowDefinition Height="75*"></RowDefinition>
                                     <RowDefinition Height="25*"></RowDefinition>
                                 </Grid.RowDefinitions>
-                                <Frame Grid.Row="0" HeightRequest="125"  WidthRequest="80"  Margin="10" HasShadow="False"  BackgroundColor="#feeee8" CornerRadius="10">
+                                <Frame Grid.Row="0" HeightRequest="125"  WidthRequest="80"  Margin="10" HasShadow="False"  Background="LightGray" CornerRadius="10">
                                     <Image Source="{Binding  ImageUrl}"></Image>
                                 </Frame>
                                 <Label Grid.Row="1" Text="{Binding Name}" HorizontalOptions="Center"  WidthRequest="120">

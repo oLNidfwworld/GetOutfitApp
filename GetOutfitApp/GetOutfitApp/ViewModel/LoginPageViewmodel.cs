@@ -113,6 +113,7 @@ namespace GetOutfitApp.ViewModel
                     var user = await usersrvs.GetUser(Login);
                     Preferences.Set("Login", Login);
                     Preferences.Set("FullName", user.Object.Fullname);
+                    Preferences.Set("Email", user.Object.Email);
                     Preferences.Set("UserId", user.Object.Id);
 
                     await Shell.Current.GoToAsync($"//{nameof(Feed)}");

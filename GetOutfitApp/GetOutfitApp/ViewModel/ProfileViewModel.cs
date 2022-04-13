@@ -19,7 +19,7 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Login = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged("_Login");
             }
         }
 
@@ -33,7 +33,7 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Fullname = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged("_Fullname");
             }
         }
 
@@ -47,7 +47,21 @@ namespace GetOutfitApp.ViewModel
             set
             {
                 this._Password = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged("_Password");
+            }
+        }
+
+        private string _Email;
+        public string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this._Email = value;
+                NotifyPropertyChanged("_Email");
             }
         }
 
@@ -83,6 +97,7 @@ namespace GetOutfitApp.ViewModel
         {
             Fullname = Preferences.Get("FullName", "none");
             Login = Preferences.Get("Login", "none");
+            Email = Preferences.Get("Email", "none");
         }
 
         

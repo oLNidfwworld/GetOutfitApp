@@ -32,7 +32,7 @@
 
             <Style TargetType="Frame" >
                 <Setter Property="CornerRadius" Value="10"></Setter>
-                <Setter Property="Background" Value="LightGray"></Setter>
+                <Setter Property="Background" Value="White"></Setter>
             </Style>
 
             <Style TargetType="Grid">
