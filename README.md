@@ -18,9 +18,11 @@ no build for ios yet
 
 ![Registration page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Registration.png)
 </br></br>
-![Selected category](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/CategoryItems.png)
+![Selected category](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/CategoryItems.png) 
 </br></br>
 ![Cart items](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/WishListt.png)
+</br></br>
+![Confirm](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/ConfirmTransaction.png)
 </br></br>
 ![Profile](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Profile.png)
 </br></br>
