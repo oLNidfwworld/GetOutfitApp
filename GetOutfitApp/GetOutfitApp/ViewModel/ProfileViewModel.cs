@@ -14,12 +14,12 @@ namespace GetOutfitApp.ViewModel
         {
             get
             {
-                return this._Login;
+                return _Login;
             }
             set
             {
-                this._Login = value;
-                NotifyPropertyChanged("_Login");
+                _Login = value;
+                OnPropertyChanged();
             }
         }
 
@@ -32,8 +32,8 @@ namespace GetOutfitApp.ViewModel
             }
             set
             {
-                this._Fullname = value;
-                NotifyPropertyChanged("_Fullname");
+                _Fullname = value;
+                OnPropertyChanged();
             }
         }
 
@@ -42,12 +42,11 @@ namespace GetOutfitApp.ViewModel
         {
             get
             {
-                return this._Password;
+                return _Password;
             }
             set
             {
-                this._Password = value;
-                NotifyPropertyChanged("_Password");
+                _Password = value; OnPropertyChanged();
             }
         }
 
@@ -56,42 +55,16 @@ namespace GetOutfitApp.ViewModel
         {
             get
             {
-                return this._Email;
+                return _Email;
             }
             set
             {
-                this._Email = value;
-                NotifyPropertyChanged("_Email");
-            }
-        }
-
-        private bool _Isbusy;
-        public bool Isbusy
-        {
-            get
-            {
-                return this._Isbusy;
-            }
-            set
-            {
-                this._Isbusy = value;
+                _Email = value;
                 OnPropertyChanged();
             }
         }
 
-        private bool _Result;
-        public bool Result
-        {
-            get
-            {
-                return this._Result;
-            }
-            set
-            {
-                this._Result = value;
-                OnPropertyChanged();
-            }
-        }
+        
          #endregion
         public ProfileViewModel()
         {
@@ -100,6 +73,18 @@ namespace GetOutfitApp.ViewModel
             Email = Preferences.Get("Email", "none");
         }
 
+        public  void Refresh()
+        {
+            string s = Preferences.Get("Login", "none");
+            string profiel = Login;
+            if (s != profiel)
+            {
+                Fullname = null; Login = null; Email = null;
+                Fullname = Preferences.Get("FullName", "none").ToString();
+                Login = Preferences.Get("Login", "none").ToString();
+                Email = Preferences.Get("Email", "none").ToString().ToString();
+            }
+        }
         
     }
 }

@@ -23,12 +23,7 @@ namespace GetOutfitApp.Views
 
         private void ContentPage_Appearing(object sender, EventArgs e)
         {
-            if(Preferences.Get("Login","none") != vm.Login)
-            {
-                vm.Fullname = Preferences.Get("FullName", "none");
-                vm.Login = Preferences.Get("Login", "none");
-                vm.Email = Preferences.Get("Email", "none");
-            }
+            vm.Refresh();
         }
     }
 }

@@ -15,6 +15,8 @@ namespace GetOutfitApp.ViewModel
     {
         public ObservableCollection<WishListModel> ItemsCart { get; set; }
 
+       
+
 
         public WishListViewModel()
         {
@@ -27,8 +29,10 @@ namespace GetOutfitApp.ViewModel
             var list = await new WishListServices().GetWishListItemsAsync();
             foreach(var item in list)
             {
+                
                 ItemsCart.Add(item);
             }
+
         }
 
         

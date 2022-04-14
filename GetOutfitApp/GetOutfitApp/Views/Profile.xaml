@@ -8,30 +8,43 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Margin="10">
-                <Label Style="{StaticResource HeaderLabel}">Общее</Label>
 
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Имя: " />
-                            <Span Text="{Binding Fullname}"   />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+            <Label Style="{StaticResource HeaderLabel}" Margin="10">Общее</Label>
 
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Логин: " />
-                            <Span Text="{Binding Login}"  />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+            <Frame CornerRadius="10" BorderColor="LightGray" Margin="10,0,10,10">
+                
+                <StackLayout Margin="10">
+                    
 
-            </StackLayout>
-           
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Имя: " />
+                                <Span Text="{Binding Fullname}"   />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Логин: " />
+                                <Span Text="{Binding Login}"  />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Почта: " />
+                                <Span Text="{Binding Email}"  />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Frame>
             
-        </StackLayout>
+            
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
