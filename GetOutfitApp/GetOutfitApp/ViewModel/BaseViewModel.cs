@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GetOutfitApp.ViewModel
 {
-    abstract class BaseViewModel
+    public abstract class BaseViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
