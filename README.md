@@ -12,8 +12,10 @@ no build for ios yet
 
 ## Individual Screenshots
 
+<h1>Login page</h1>
 ![Login page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Login.png)
 </br></br>
+Registration page
 ![Registration page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Registration.png)
 </br></br>
 ![Selected category](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/CategoryItems.png)
