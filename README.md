@@ -12,21 +12,21 @@ no build for ios yet
 
 ## Individual Screenshots
 
-<h1>Login page</h1></br>
-![Login page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Login.png)
+
+[Login page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Login.png)
 </br></br>
 Registration page
-![Registration page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Registration.png)
+[Registration page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Registration.png)
 </br></br>
-![Selected category](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/CategoryItems.png)
+[Selected category](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/CategoryItems.png)
 </br></br>
-![Cart items](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/WishList.png)
+[Cart items](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/WishList.png)
 </br></br>
-![Profile](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Profile.png)
+[Profile](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Profile.png)
 </br></br>
-![Main page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Main.png)
+[Main page](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/Main.png)
 </br></br>
-![Selected item](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/ItemReview.png)
+[Selected item](https://github.com/oLNidfwworld/GetOutfitApp/blob/master/Screenshots%202.0/ItemReview.png)
 </br></br>
 
 ## Data
